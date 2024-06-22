@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+
+  <title>Produtos</title>
+</head>
+<body>
+  <h1>Lista de Produtos</h1>
+  <a href="/ingressos/add">Adicionar Produto</a>
+  <ul>
+    {{#ingressos}}
+      <li>
+        <strong>{{nome}}</strong> - {{descricao}} - ${{preco}} - Estoque: {{estoque}}
+        <a href="/ingressos/edit/{{id}}">Editar</a>
+        <form action="/ingressos/delete/{{id}}" method="POST" style="display:inline;">
+          <button type="submit">Excluir</button>
+        </form>
+      </li>
+    {{/ingressos}}
+  </ul>
+  <a href="/queue">Voltar à fila</a>
+  <a href="/logout">Sair</a>
+</body>
+</html>

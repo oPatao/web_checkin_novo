@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Blinker", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f1e2cc;
+}
+
+header{
+    width: 100%;
+    padding: 28px 5%;
+}
+
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+#navbar i, h2{
+    font-size: 40px;
+    color: #bf4342;
+    margin-left: 2%;
+}
+
+.row h1{
+    color: #bf4342;
+}
+
+.container .btn-primary{
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: #bf4342;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color .3s ease;
+    justify-content: center;
+}
+
+.container .btn-primary:hover{
+    background-color: #ff9292;
+    color: rgb(83, 83, 83);
+}
+
+.form-label{
+    color: #bf4342;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.btn-link{
+    color: #bf4342;
+}

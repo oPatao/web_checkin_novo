@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Perfil do Usuário</title>
+</head>
+<body>
+  <h1>Atualizar Perfil</h1>
+  <form action="/editarUser" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" value="{{user.nome}}" required><br>
+
+    <label for="telefone">Telefone:</label>
+    <input type="text" id="telefone" name="telefone" value="{{user.telefone}}" required><br>
+
+    <label for="Ningresso">Número do Ingresso:</label>
+    <input type="text" id="Ningresso" name="Ningresso" value="{{user.Ningresso}}" required><br>
+
+    <label for="password">Nova Senha (deixe em branco para não alterar):</label>
+    <input type="password" id="password" name="password"><br>
+
+    <button type="submit">Atualizar</button>
+  </form>
+  <a href="/queue">Voltar à fila</a>
+</body>
+</html>

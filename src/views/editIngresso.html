@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Editar Produto</title>
+</head>
+<body>
+  <h1>Editar Produto</h1>
+  <form action="/ingressos/edit/{{ingressos.id}}" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" value="{{ingressos.nome}}" required><br>
+
+    <label for="descricao">Descrição:</label>
+    <input type="text" id="descricao" name="descricao" value="{{ingressos.descricao}}" required><br>
+
+    <label for="preco">Preço:</label>
+    <input type="number" id="preco" name="preco" value="{{ingressos.preco}}" step="0.01" required><br>
+
+    <label for="estoque">Estoque:</label>
+    <input type="number" id="estoque" name="estoque" value="{{ingressos.estoque}}" required><br>
+
+    <button type="submit">Atualizar</button>
+  </form>
+  <a href="/ingressos">Voltar à lista de produtos</a>
+</body>
+</html>
