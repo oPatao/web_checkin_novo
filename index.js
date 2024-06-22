@@ -9,11 +9,11 @@ const path = require('path');
 
 app.engine('html', mustacheExpress());
 app.set('view engine', 'html');
-app.set('views', __dirname + '/src/views');
+app.set('views', path.join(__dirname, './src/views'));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, './src/views/css')));
 
 app.use(session({
   secret: 'minhaChaveExtremamenteSecreta123!@#', 
